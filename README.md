@@ -43,7 +43,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/AliiAnr/Ali-Personal-Portfolio.git
    cd portfolio
    ```
 
@@ -144,7 +144,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Ali An Nuur** - Mobile Developer
 
-- 💼 **LinkedIn**: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/alianr/)
+- 💼 **LinkedIn**: [Ali An Nuur](https://www.linkedin.com/in/alianr/)
 
 ---
 
