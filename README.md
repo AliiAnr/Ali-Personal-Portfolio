@@ -150,5 +150,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
   <p>⭐ Star this repository if you found it helpful!</p>
-  <p>Made with ❤️ and  by Ali An Nuur</p>
+  <p>Made with ❤️ by Ali An Nuur</p>
 </div>

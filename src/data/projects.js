@@ -318,13 +318,107 @@ export const projects = [
       ],
     },
 
-    roles: ["Unity Developer", "Game Programmer", "AI Systems Designer", "Researcher"],
+    roles: [
+      "Unity Developer",
+      "Game Programmer",
+      "AI Systems Designer",
+      "Researcher",
+    ],
 
     mockups: [
       "/project-covers/sarun/sarun-1.png",
       "/project-covers/sarun/sarun-2.png",
       "/project-covers/sarun/sarun-3.png",
       "/project-covers/sarun/sarun-4.png",
+    ],
+  },
+
+  {
+    id: 6,
+    title: "Typing Test - Java Swing GUI",
+    description:
+      "A desktop application to practice and measure typing speed and accuracy. This application is designed with a simple and intuitive interface using Java Swing, allowing users to practice efficiently and view their performance results, which are stored in a database.",
+    image: "/project-covers/typing-test/typing-test-3.png",
+    appIcon: "/project-icons/typing-test-icon.png",
+    tags: ["GUI", "Typing Test", "Desktop App", "Utility", "Game"],
+    technologies: ["Java", "Java Swing", "MySQL", "JDBC"],
+    tools: ["Visual Studio Code", "XAMPP", "Github"],
+    url: "",
+    githubUrl: "https://github.com/AliiAnr/Typingtest-Swing-GUI",
+    star: {
+      situation:
+        "Many typing test applications are web based, but desktop applications often offer a more responsive, latency free experience. This project began as a personal initiative to hone my skills in GUI (Graphical User Interface) development with Java Swing while creating a functional tool that can be used offline to improve typing skills.",
+      task: [
+        "Design and build a functional typing test application using Java Swing",
+        "Implement logic to calculate performance metrics such as Words Per Minute (WPM) and accuracy",
+        "Create a clean, intuitive, and user-friendly user interface (UI)",
+        "Integrate the application with a MySQL database to store the user's test history",
+        "Ensure the application runs stably and provides real time feedback to the user while typing",
+      ],
+      action: [
+        "Built all interface components, such as frames, panels, text areas, and buttons, using the Java Swing library",
+        "Developed an algorithm to track user input, compare it against the source text, and accurately calculate WPM and accuracy percentage",
+        "Designed the application flow, from the main screen and the typing test session to the final informative results display",
+        "Used JDBC (Java Database Connectivity) to establish a connection between the Java application and the MySQL database",
+        "Structured the database schema and wrote SQL queries to store and retrieve score data, WPM, and accuracy for each test session",
+      ],
+      result: [
+        "Successfully created a fully functional, standalone desktop typing test application",
+        "Produced a practical tool that can be used for regular typing practice without needing an internet connection",
+        "The successful implementation of Java Swing and JDBC deepened my understanding of desktop application development and database interaction",
+        "This project serves as a solid portfolio piece to demonstrate software engineering skills using Java",
+        "The application is capable of providing instant and accurate performance feedback to the user",
+      ],
+    },
+    roles: ["Java Developer", "Desktop App Developer", "UI/UX Designer"],
+    mockups: [
+      "/project-covers/typing-test/typing-test-1.png",
+      "/project-covers/typing-test/typing-test-2.png",
+      "/project-covers/typing-test/typing-test-3.png",
+    ],
+  },
+
+  {
+    id: 7,
+    title: "Chess Game - Java Swing GUI",
+    description:
+      "A desktop replica of the classic chess game, inspired by the popular platform, Chess.com. Built with Java Swing, this project aims to replicate the core gameplay experience and interface of Chess.com, focusing on implementing accurate game logic and responsive user interaction.",
+    image: "/project-covers/chess/chess-3.png",
+    appIcon: "/project-icons/chess-icon.png",
+    tags: ["Desktop App", "Game", "Strategy", "Board Game", "Java"],
+    technologies: ["Java", "Java Swing"],
+    tools: ["NetBeans", "Github"],
+    url: "",
+    githubUrl: "https://github.com/AliiAnr/Chess-Swing-GUI",
+    star: {
+      situation:
+        "As an user of Chess.com, I was curious about the behind the scenes mechanics that make online chess so seamless and interactive. This project was born from the desire to challenge myself by attempting to rebuild the core functionalities of such a sophisticated platform into a desktop application. The goal was not just to create a chess game, but to understand and implement the complex logic, state management, and UI design that make Chess.com so effective",
+      task: [
+        "Develop a fully functional two player (player vs player) chess game on the desktop",
+        "Implement all the fundamental rules of chess, including the unique moves for each piece (Pawn, Knight, Bishop, Rook, Queen, King)",
+        "Create logic to detect critical game states such as check, checkmate, and stalemate",
+        "Design a clear and interactive graphical user interface (GUI) for the chessboard and its pieces",
+        "Effectively manage the game state, including player turns, piece positions, and valid moves",
+      ],
+      action: [
+        "Designed the application architecture using OOP principles, creating separate classes for the Board, Square, and each type of Piece, which inherits its respective movement logic",
+        "Used Java Swing components like `JFrame` and `JPanel` to draw the chessboard and render the piece images on it",
+        "Implemented a `MouseListener` to handle player input, such as selecting a piece to move and specifying the destination square",
+        "Wrote complex validation algorithms to ensure that every move made by a player is legal according to the rules of chess",
+        "Developed functions to evaluate the board state after each move to check for check or checkmate conditions, then provide notifications or end the game",
+      ],
+      result: [
+        "Successfully created a complete and playable two player desktop chess application",
+        "Demonstrated a deep understanding of Object-Oriented Programming (OOP) concepts through a modular and structured class design",
+        "The application accurately implements all fundamental rules of chess, providing an authentic gameplay experience",
+        "This project serves as a strong testament to the ability to design complex algorithms and manage state within an interactive application",
+      ],
+    },
+    roles: ["Java Developer", "Game Programmer", "Desktop App Developer"],
+    mockups: [
+      "/project-covers/chess/chess-1.png",
+      "/project-covers/chess/chess-2.png",
+      "/project-covers/chess/chess-3.png",
     ],
   },
 ];
