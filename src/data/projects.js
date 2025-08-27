@@ -421,4 +421,68 @@ export const projects = [
       "/project-covers/chess/chess-3.png",
     ],
   },
+
+  {
+    id: 8,
+    title: "Pestify - Pest Classification App",
+    description:
+      "An end-to-end android and machine learning solution for identifying agricultural pests from images. Pestify consists of an Android application for user interaction, a deep learning model for classification, and a REST API serving as the bridge between them. This project was developed as part of a multidisciplinary team.",
+    image: "/project-covers/pestify/pestify-1.png",
+    appIcon: "/project-icons/pestify-icon.png",
+    tags: [
+      "Android",
+      "Machine Learning",
+      "Image Classification",
+      "Deep Learning",
+      "AgriTech",
+    ],
+    technologies: [
+      "Kotlin",
+      "Android SDK",
+      "Retrofit",
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "Flask",
+      "Google Cloud Platform",
+    ],
+    tools: [
+      "Android Studio",
+      "Google Colab",
+      "Jupyter Notebook",
+      "Visual Studio Code",
+      "Postman",
+      "Github",
+    ],
+    url: "",
+    githubUrl: "https://github.com/C241-PS242-Pestify",
+    star: {
+      situation:
+        "Pests are one of the biggest threats to farmers and can lead to crop failure. Quick and accurate pest identification is key to effective management. However, many farmers lack access to experts. This project was developed as a capstone solution to address this problem by leveraging the power of smartphones and artificial intelligence, enabling instant pest identification with just a phone camera. The goal was to create an easy to use Android app that connects to a machine learning model capable of classifying common agricultural pests from images, providing farmers with immediate insights and recommendations",
+      task: [
+        "Develop a native Android application that allows users to capture or upload images of pests.",
+        "Build, train, and evaluate an image classification model using Convolutional Neural Networks (CNNs) to recognize various types of pests.",
+        "Create a REST API to wrap the machine learning model, making it accessible to the mobile application.",
+        "Integrate the Android app with the backend API to send images and receive prediction results.",
+        "Collaborate within a team comprising Mobile Development, Machine Learning, and Cloud Computing paths.",
+      ],
+      action: [
+        "Mobile Development Team: Designed the app's UI/UX using Android Studio and Kotlin. Implemented camera and gallery features, and used the Retrofit library for efficient API calls.",
+        "Machine Learning Team: Collected and cleaned a dataset of pest images. Experimented with model architectures like VGG16 and EfficientNet using TensorFlow/Keras in Google Colab. Trained the model to achieve a satisfactory accuracy.",
+        "Cloud Computing Team: Developed a backend API using Flask in Python. Created an endpoint that accepts an image file, processes it with the trained model, and returns the prediction in JSON format. Deployed the API on Google Cloud Platform to make it publicly accessible.",
+      ],
+      result: [
+        "Successfully created an integrated end-to-end system, from the mobile client to the machine learning model.",
+        "The image classification model achieved high accuracy (over 90% on the validation set), proving its viability for pest identification.",
+        "A functional and intuitive Android application was successfully connected to the backend, providing a seamless user experience.",
+        "Gained valuable team collaboration experience in a complete technology product development cycle (ML, Cloud, and Mobile).",
+      ],
+    },
+    roles: ["Android Developer", "UI/UX Designer"],
+    mockups: [
+      "/project-covers/pestify/pestify-1.png",
+      "/project-covers/pestify/pestify-2.png",
+      "/project-covers/pestify/pestify-3.png",
+    ],
+  },
 ];
