@@ -485,4 +485,67 @@ export const projects = [
       "/project-covers/pestify/pestify-3.png",
     ],
   },
+
+  {
+    id: 9,
+    title: "Fleura - Bouquet & Gift Marketplace",
+    description:
+      "Fleura is a mobile marketplace app that connects users with local florists and gift sellers. Customers can easily browse, customize, and order bouquets or gifts for special occasions. Designed with a modern UI, Fleura simplifies the buying process while supporting local businesses through a digital storefront.",
+    image: "/project-covers/fleura/fleura-1.png",
+    appIcon: "/project-icons/fleura-icon.png",
+    tags: [
+      "Mobile App",
+      "Marketplace",
+      "Bouquet",
+      "Gifting",
+      "E-commerce",
+      "Customization",
+    ],
+    technologies: [
+      "Kotlin",
+      "Jetpack Compose",
+      "Nest.js",
+      "PostgreSQL",
+      "Redis",
+      "Firebase",
+    ],
+    tools: ["Android Studio", "Figma", "Miro", "Postman", "Github", "Railway"],
+    url: "",
+    githubUrl: "",
+
+    star: {
+      situation:
+        "Traditionally, buying bouquets and gifts requires physically visiting flower shops or marketplaces, which can be time consuming and often limited by location and store hours. Many customers struggle with last minute orders or the desire to customize bouquets to match special occasions like birthdays, anniversaries, or graduations. On the other hand, local florists and gift sellers often lack the resources to build or maintain their own digital platforms. This creates a visibility gap, where their unique products are only accessible to people nearby.\n\nOur research indicated a clear opportunity, customers increasingly prefer the convenience of mobile shopping, but general e-commerce platforms often fail to capture the unique experience of gifting, such as personalization, curated product categories, and direct interaction with sellers. There was also a need for real time updates on order status, especially for time sensitive gifts like surprise deliveries.\n\nFleura was envisioned to address this dual challenge for instance providing customers with a simple, modern app to explore and customize bouquets and gifts while giving local sellers a digital storefront to expand their reach without technical barriers. The goal was to create a marketplace tailored to the emotional and practical aspects of gifting making the process seamless, trustworthy, and delightful.",
+      task: [
+        "Design a modern and intuitive mobile marketplace for bouquets and gifts",
+        "Enable real time catalog browsing with customizable bouquet options",
+        "Support secure transactions and reliable order management",
+        "Create a backend integration to manage product listings, sellers, and buyers",
+        "Ensure smooth and responsive user experience with Android native technologies",
+      ],
+      action: [
+        "Developed the app frontend with Jetpack Compose for fast and reactive UI building",
+        "Integrated Retrofit2 for API communication between client and server",
+        "Implemented Local Database for local caching and offline browsing",
+        "Designed a clean user flow from product discovery to checkout",
+        "Built notification system for order status updates using Firebase",
+        "Tested app usability with real users to validate ordering flow and product customization",
+      ],
+      result: [
+        "Developed Fleura as a functional marketplace app for bouquets and gifts",
+        "Improved accessibility for customers to shop and customize bouquets from anywhere",
+        "Empowered local florists and gift sellers with digital storefronts",
+        "Positive user testing feedback highlighted smooth navigation and modern design",
+        "Optimized app with responsive UI and reduced API response time by 30% using Retrofit2 and caching",
+      ],
+    },
+
+    roles: ["Android Developer", "UI/UX Designer", "Researcher"],
+
+    mockups: [
+      "/project-covers/fleura/fleura-1.png",
+      "/project-covers/fleura/fleura-2.png",
+      "/project-covers/fleura/fleura-3.png",
+    ],
+  },
 ];

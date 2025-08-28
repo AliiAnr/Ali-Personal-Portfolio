@@ -204,95 +204,94 @@ const ProjectDetail = () => {
 
           {/* Right Column - Mockups Carousel (Only show if mockups exist) */}
           {hasMockups && (
-  <div className="relative">
-    <ScrollReveal direction="right">
-      <div className="relative rounded-2xl overflow-hidden bg-gray-50 dark:bg-white/5 shadow-lg hover:shadow-2xl transition-all duration-500 will-change-transform border border-gray-200 dark:border-white/10 bg-gradient-to-br from-primary/20 to-primary/5 p-8">
-        <div className="relative bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden min-h-[300px] max-h-[600px] flex items-center justify-center">
-          {/* Carousel Container */}
-          <div
-            className="flex transition-transform duration-500 ease-in-out w-full h-full"
-            style={{
-              transform: `translateX(-${currentMockup * 100}%)`,
-            }}
-          >
-            {project.mockups.map((mockup, index) => (
-              <div
-                key={index}
-                className="w-full flex-shrink-0 flex items-center justify-center"
-              >
-                <img
-                  src={mockup}
-                  alt={`${project.title} mockup ${index + 1}`}
-                  className="max-w-full max-h-full object-contain"
-                  style={{
-                    width: 'auto',
-                    height: 'auto'
-                  }}
-                />
-              </div>
-            ))}
-          </div>
+            <div className="relative">
+              <ScrollReveal direction="right">
+                <div className="relative rounded-2xl overflow-hidden bg-gray-50 dark:bg-white/5 shadow-lg hover:shadow-2xl transition-all duration-500 will-change-transform border border-gray-200 dark:border-white/10 bg-gradient-to-br from-primary/20 to-primary/5 p-8">
+                  <div className="relative bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden min-h-[300px] max-h-[600px] flex items-center justify-center">
+                    {/* Carousel Container */}
+                    <div
+                      className="flex transition-transform duration-500 ease-in-out w-full h-full"
+                      style={{
+                        transform: `translateX(-${currentMockup * 100}%)`,
+                      }}
+                    >
+                      {project.mockups.map((mockup, index) => (
+                        <div
+                          key={index}
+                          className="w-full flex-shrink-0 flex items-center justify-center"
+                        >
+                          <img
+                            src={mockup}
+                            alt={`${project.title} mockup ${index + 1}`}
+                            className="max-w-full max-h-full object-contain"
+                            style={{
+                              width: "auto",
+                              height: "auto",
+                            }}
+                          />
+                        </div>
+                      ))}
+                    </div>
 
-          {/* Navigation Arrows */}
-          {project.mockups.length > 1 && (
-            <>
-              <button
-                onClick={prevMockup}
-                disabled={isTransitioning}
-                className={`absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm hover:bg-white hover:scale-110 text-black rounded-full transition-all duration-300 focus-ring shadow-lg z-10 ${
-                  isTransitioning
-                    ? "opacity-50 cursor-not-allowed"
-                    : "opacity-80 hover:opacity-100"
-                }`}
-              >
-                <ArrowUpIcon className="w-5 h-5 -rotate-90" />
-              </button>
-              <button
-                onClick={nextMockup}
-                disabled={isTransitioning}
-                className={`absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm hover:bg-white hover:scale-110 text-black rounded-full transition-all duration-300 focus-ring shadow-lg z-10 ${
-                  isTransitioning
-                    ? "opacity-50 cursor-not-allowed"
-                    : "opacity-80 hover:opacity-100"
-                }`}
-              >
-                <ArrowUpIcon className="w-5 h-5 rotate-90" />
-              </button>
-            </>
+                    {/* Navigation Arrows */}
+                    {project.mockups.length > 1 && (
+                      <>
+                        <button
+                          onClick={prevMockup}
+                          disabled={isTransitioning}
+                          className={`absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm hover:bg-white hover:scale-110 text-black rounded-full transition-all duration-300 focus-ring shadow-lg z-10 ${
+                            isTransitioning
+                              ? "opacity-50 cursor-not-allowed"
+                              : "opacity-80 hover:opacity-100"
+                          }`}
+                        >
+                          <ArrowUpIcon className="w-5 h-5 -rotate-90" />
+                        </button>
+                        <button
+                          onClick={nextMockup}
+                          disabled={isTransitioning}
+                          className={`absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm hover:bg-white hover:scale-110 text-black rounded-full transition-all duration-300 focus-ring shadow-lg z-10 ${
+                            isTransitioning
+                              ? "opacity-50 cursor-not-allowed"
+                              : "opacity-80 hover:opacity-100"
+                          }`}
+                        >
+                          <ArrowUpIcon className="w-5 h-5 rotate-90" />
+                        </button>
+                      </>
+                    )}
+                  </div>
+
+                  {/* Enhanced Mockup Indicators */}
+                  {project.mockups.length > 1 && (
+                    <div className="flex justify-center gap-2 mt-6">
+                      {project.mockups.map((_, index) => (
+                        <button
+                          key={index}
+                          onClick={() => goToMockup(index)}
+                          disabled={isTransitioning}
+                          className={`relative transition-all duration-300 ${
+                            index === currentMockup
+                              ? "w-8 h-3 bg-primary rounded-full"
+                              : "w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full hover:bg-gray-400 dark:hover:bg-gray-500"
+                          } ${
+                            isTransitioning
+                              ? "opacity-50 cursor-not-allowed"
+                              : "hover:scale-110"
+                          }`}
+                        >
+                          {/* Active indicator pulse effect */}
+                          {index === currentMockup && (
+                            <div className="absolute inset-0 bg-primary rounded-full animate-pulse opacity-50"></div>
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </ScrollReveal>
+            </div>
           )}
-        </div>
-
-        {/* Enhanced Mockup Indicators */}
-        {project.mockups.length > 1 && (
-          <div className="flex justify-center gap-2 mt-6">
-            {project.mockups.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToMockup(index)}
-                disabled={isTransitioning}
-                className={`relative transition-all duration-300 ${
-                  index === currentMockup
-                    ? "w-8 h-3 bg-primary rounded-full"
-                    : "w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full hover:bg-gray-400 dark:hover:bg-gray-500"
-                } ${
-                  isTransitioning
-                    ? "opacity-50 cursor-not-allowed"
-                    : "hover:scale-110"
-                }`}
-              >
-                {/* Active indicator pulse effect */}
-                {index === currentMockup && (
-                  <div className="absolute inset-0 bg-primary rounded-full animate-pulse opacity-50"></div>
-                )}
-              </button>
-            ))}
-          </div>
-        )}
-
-      </div>
-    </ScrollReveal>
-  </div>
-)}
         </div>
       </section>
 
@@ -312,7 +311,7 @@ const ProjectDetail = () => {
                 <h3 className="text-xl font-bold mb-4 text-blue-600 dark:text-blue-400">
                   Situation
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
                   {project.star.situation}
                 </p>
               </div>
