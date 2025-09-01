@@ -4,7 +4,7 @@ export const user = {
     initials: 'ANR',
     title: 'iOS & Android Developer',
     bio: 'I build accessible, inclusive products and digital experiences for mobile. My goal is to create work that is not only beautiful and functional but also solves user problems.',
-    avatar: 'src/assets/avatar.png',
+    avatar: '/assets/avatar.png',
     location: 'Mataram, Indonesia',
     email: 'alianur043@gmail.com',
     supportURL: 'https://www.linkedin.com/in/alianr',
