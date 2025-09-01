@@ -1,7 +1,7 @@
 export const socials = [
     {
         name: 'GitHub',
-        url: 'https://github.com/AliiAnr',
+        url: 'https://linktr.ee/AliAnNuur',
     },
     {
         name: 'LinkedIn',
@@ -9,7 +9,7 @@ export const socials = [
     },
     {
         name: 'Twitter',
-        url: 'https://www.linkedin.com/in/alianr',
+        url: 'https://linktr.ee/AliAnNuur',
     },
     {
         name: 'Linktree', 
