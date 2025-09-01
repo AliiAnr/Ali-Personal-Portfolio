@@ -5,7 +5,7 @@ import ScrollReveal from "./ScrollReveal";
 import { ArrowUpIcon, GitHubIcon, LockIcon } from "./Icons";
 
 const ProjectDetail = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const navigate = useNavigate();
   const [project, setProject] = useState(null);
   const [currentMockup, setCurrentMockup] = useState(0);
@@ -31,7 +31,7 @@ const ProjectDetail = () => {
     project.mockups.some((mockup) => mockup && mockup.trim() !== "");
 
   useEffect(() => {
-    const foundProject = projects.find((p) => p.id === parseInt(id));
+    const foundProject = projects.find((p) => p.slug === slug);
     if (foundProject) {
       setProject(foundProject);
     } else {
@@ -39,7 +39,7 @@ const ProjectDetail = () => {
     }
 
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [id, navigate]);
+  }, [slug, navigate]);
 
   if (!project) {
     return (

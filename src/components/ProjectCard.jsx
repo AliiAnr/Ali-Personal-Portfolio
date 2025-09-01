@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/project/${project.id}`);
+    navigate(`/project/${project.slug}`);
   };
 
   return (

@@ -120,7 +120,7 @@ const Projects = () => {
 
             return (
               <div
-                key={`${project.id}-${animationKey}`}
+                key={`${project.slug}-${animationKey}`}
                 className="project-card"
                 style={{
                   opacity: isVisible ? 1 : 0,

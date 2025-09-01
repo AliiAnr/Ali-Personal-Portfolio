@@ -1,7 +1,8 @@
 export const projects = [
-    {
+  {
     id: 1,
     title: "HandyHub - Handyman Services",
+    slug: "handyhub-handyman-services",
     description:
       "A Website for a Handyman services platform. This project aims to bridge the gap between customers seeking reliable services and professional providers. This project was conceived from a common challenge many people face: the difficulty of quickly finding reliable handymen or technicians.",
     image: "/project-covers/handyhub/handyhub-1.png",
@@ -45,6 +46,7 @@ export const projects = [
   {
     id: 2,
     title: "Fleupart - Seller Companion App for Fleura",
+    slug: "fleupart-seller-companion-app",
     description:
       "Fleupart is the companion app for sellers on the Fleura marketplace. It allows florists and gift vendors to manage their digital storefront, track orders in real time, and communicate directly with customers. Designed with simplicity in mind, Fleupart empowers small businesses to participate in the digital economy without requiring technical expertise.",
     image: "/project-covers/fleupart/fleupart-1.png",
@@ -101,6 +103,7 @@ export const projects = [
   {
     id: 3,
     title: "Typing Test - Java Swing GUI",
+    slug: "typing-test-java-swing-gui",
     description:
       "A desktop application to practice and measure typing speed and accuracy. This application is designed with a simple and intuitive interface using Java Swing, allowing users to practice efficiently and view their performance results, which are stored in a database.",
     image: "/project-covers/typing-test/typing-test-3.png",
@@ -146,6 +149,7 @@ export const projects = [
   {
     id: 4,
     title: "Pestify - Pest Classification App",
+    slug: "pestify-pest-classification-app",
     description:
       "An end-to-end android and machine learning solution for identifying agricultural pests from images. Pestify consists of an Android application for user interaction, a deep learning model for classification, and a REST API serving as the bridge between them. This project was developed as part of a multidisciplinary team.",
     image: "/project-covers/pestify/pestify-1.png",
@@ -207,11 +211,10 @@ export const projects = [
     ],
   },
 
-  
-
   {
     id: 5,
     title: "Chess Game - Java Swing GUI",
+    slug: "chess-game-java-swing-gui",
     description:
       "A desktop replica of the classic chess game, inspired by the popular platform, Chess.com. Built with Java Swing, this project aims to replicate the core gameplay experience and interface of Chess.com, focusing on implementing accurate game logic and responsive user interaction.",
     image: "/project-covers/chess/chess-3.png",
@@ -256,6 +259,7 @@ export const projects = [
   {
     id: 6,
     title: "Fleura - Bouquet & Gift Marketplace",
+    slug: "fleura-bouquet-gift-marketplace",
     description:
       "Fleura is a mobile marketplace app that connects users with local florists and gift sellers. Customers can easily browse, customize, and order bouquets or gifts for special occasions. Designed with a modern UI, Fleura simplifies the buying process while supporting local businesses through a digital storefront.",
     image: "/project-covers/fleura/fleura-1.png",
@@ -318,11 +322,10 @@ export const projects = [
     ],
   },
 
-
-
   {
     id: 7,
     title: "Ctzone - Timezone Converter",
+    slug: "ctzone-timezone-converter",
     description:
       "An offline first iOS app that makes cross timezone coordination effortless. Ctzone highlights overlapping working hours, converts times instantly across multiple cities, and handles DST edge cases without requiring an internet connection.",
     image: "/project-covers/ctzone/ctzone-3.webp",
@@ -385,6 +388,7 @@ export const projects = [
   {
     id: 8,
     title: "Sarun - 2D Racing Game",
+    slug: "sarun-2d-racing-game",
     description:
       "An Unity 2D racing game featuring intelligent AI opponents, dynamic obstacle generation, and competitive race mechanics. Players compete across multiple lanes with precise jump timing and strategic speed management, while AI bots demonstrate sophisticated pathfinding and obstacle avoidance algorithms.",
     image: "/project-covers/sarun/sarun-4.png",
@@ -451,6 +455,7 @@ export const projects = [
   {
     id: 9,
     title: "Runday - Smart Recovery",
+    slug: "runday-smart-recovery",
     description:
       "An iOS app that analyzes HealthKit to prevent overtraining. Runday gives simple, actionable recovery recommendations, zone based load insights, and gentle nudges to keep your training sustainable.",
     image: "/project-covers/runday/runday-3.png",
@@ -466,8 +471,8 @@ export const projects = [
       "Swift Charts",
     ],
     tools: ["Xcode", "Sketch", "Confluence", "Github"],
-    url: "https://example.com/runday", // belum WOII
-    githubUrl: "https://github.com/example/runday",
+    url: "",
+    githubUrl: "",
 
     star: {
       situation:
@@ -516,6 +521,7 @@ export const projects = [
   {
     id: 10,
     title: "WeDraw - Trace & Create",
+    slug: "wedraw-trace-create",
     description:
       "An iOS Augmented Reality tracing app that lets users place a reference image in world space, then move, rotate, and scale it smoothly. Even if the anchor is lost, drawing feels stable and intuitive.",
     image: "/project-covers/wedraw/wedraw-3.png",
@@ -593,6 +599,7 @@ export const projects = [
   {
     id: 11,
     title: "Pyramyst - Desert Puzzle Game",
+    slug: "pyramyst-desert-puzzle-game",
     description:
       "A watchOS mini puzzle game set in the desert ruins. Players become archaeologists unlocking relics by rotating the Digital Crown with crisp haptic feedback. Designed for micro sessions, Pyramyst delivers instant fun in 1–2 minute bursts, perfect for killing idle time on Apple Watch.",
     image: "/project-covers/pyramyst/pyramyst-3.png",
@@ -654,18 +661,4 @@ export const projects = [
       "/project-covers/pyramyst/pyramyst-3.png",
     ],
   },
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
 ].reverse();

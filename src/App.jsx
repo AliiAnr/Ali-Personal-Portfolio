@@ -147,7 +147,7 @@ function App() {
           <SkipToContent />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/project/:id" element={<ProjectPage />} />
+            <Route path="/project/:slug" element={<ProjectPage />} />
           </Routes>
         </Router>
       </div>
