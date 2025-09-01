@@ -2,84 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Updated Favicons -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg"> -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
     <title>Ali An Nuur - iOS & Android Developer</title>
     <meta name="title" content="Ali An Nuur - iOS & Android Developer">
-    <meta name="description" content="Portfolio of Ali An Nuur, a passionate iOS & Android developer creating modern, user-centric digital experiences.">
+    <meta name="description" content="Ali An Nuur is a skilled iOS & Android developer specializing in Swift, Kotlin, React Native, and Flutter. Creating innovative mobile applications with modern UI/UX design.">
     <meta name="author" content="Ali An Nuur">
-    <link rel="canonical" href="https://yourdomain.com/">
+    <meta name="keywords" content="iOS developer, Android developer, mobile app development, Swift, Kotlin, React Native, Flutter, mobile UI/UX, Indonesia developer">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://ali-an-nuur.vercel.app/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:url" content="https://ali-an-nuur.vercel.app/">
     <meta property="og:title" content="Ali An Nuur - iOS & Android Developer">
-    <meta property="og:description" content="Explore the work of Ali An Nuur, specializing in iOS & Android development.">
-    <meta property="og:image" content="https://yourdomain.com/assets/og-image.png">
+    <meta property="og:description" content="Skilled iOS & Android developer creating innovative mobile applications. Expertise in Swift, Kotlin, React Native, and Flutter.">
+    <meta property="og:image" content="https://ali-an-nuur.vercel.app/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ali An Nuur - iOS & Android Developer Portfolio">
+    <meta property="og:site_name" content="Ali An Nuur Portfolio">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourdomain.com/">
-    <meta property="twitter:title" content="Ali An Nuur - iOS & Android Developer">
-    <meta property="twitter:description" content="Explore the work of Ali An Nuur, specializing in iOS & Android development.">
-    <meta property="twitter:image" content="https://yourdomain.com/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ali-an-nuur.vercel.app/">
+    <meta name="twitter:title" content="Ali An Nuur - iOS & Android Developer">
+    <meta name="twitter:description" content="Skilled iOS & Android developer creating innovative mobile applications with modern technologies.">
+    <meta name="twitter:image" content="https://ali-an-nuur.vercel.app/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Ali An Nuur Portfolio">
+    <meta name="twitter:creator" content="@AliiAnr">
+    <meta name="twitter:site" content="@AliiAnr">
 
-    <!-- Preload Fonts -->
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#7C3AED">
+    <meta name="msapplication-TileColor" content="#7C3AED">
+    <meta name="application-name" content="Ali An Nuur Portfolio">
+    <meta name="apple-mobile-web-app-title" content="Ali An Nuur">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Preload Critical Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://api.github.com">
     
     <!-- Theme Management -->
     <script>
       (function() {
-        // Cek tema dari localStorage atau default ke dark
         const theme = localStorage.getItem('theme') || 'dark';
-        
-        // Langsung apply class ke documentElement sebelum rendering
         const root = document.documentElement;
-        
-        // Remove semua theme classes dulu
         root.classList.remove('light', 'dark');
-        
-        // Add theme class yang sesuai
         root.classList.add(theme);
-        
-        // Set attribute untuk CSS targeting
         root.setAttribute('data-theme', theme);
       })();
     </script>
     
-    <!-- JSON-LD Schema -->
+    <!-- Enhanced JSON-LD Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Ali An Nuur",
-      "url": "https://yourdomain.com",
-      "image": "https://yourdomain.com/assets/avatar.webp",
+      "url": "https://ali-an-nuur.vercel.app",
+      "image": "https://ali-an-nuur.vercel.app/assets/avatar.webp",
       "sameAs": [
-        "https://www.linkedin.com/in/alianr",
         "https://www.linkedin.com/in/alianr",
         "https://github.com/AliiAnr"
       ],
       "jobTitle": "iOS & Android Developer",
+      "description": "Skilled mobile developer specializing in iOS and Android app development",
+      "knowsAbout": ["iOS Development", "Android Development", "Swift", "Kotlin", "React Native", "Flutter", "Mobile UI/UX"],
       "worksFor": {
         "@type": "Organization",
-        "name": "Self-Employed"
-      }  
+        "name": "Freelance"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ID"
+      }
     }
     </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": "https://yourdomain.com/",
+      "@id": "https://ali-an-nuur.vercel.app/#website",
+      "url": "https://ali-an-nuur.vercel.app/",
       "name": "Ali An Nuur's Portfolio",
-      "author": {
-        "@type": "Person",
-        "name": "Ali An Nuur"
+      "description": "Portfolio website showcasing iOS and Android development projects",
+      "publisher": {
+        "@id": "https://ali-an-nuur.vercel.app/#person"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ali-an-nuur.vercel.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
     </script>

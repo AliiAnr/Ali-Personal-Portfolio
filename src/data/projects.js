@@ -620,7 +620,7 @@ export const projects = [
 
     star: {
       situation:
-        "Apple Watch is often seen mainly as a health tracker, despite its powerful hardware. Our research showed many users wanted something light and fun to fill idle moments—like waiting in line or for the bus—without the weight of productivity apps. In these contexts, people look for instant gratification: quick to start, easy to stop, and leaving a small sense of satisfaction. The Apple Watch, with its small screen, simple gestures, and haptic feedback, is ideal for delivering these ‘micro-fun’ experiences. This inspired us to build a game that transforms short, otherwise boring waits into playful moments.",
+        "Apple Watch is often seen mainly as a health tracker, despite its powerful hardware. Our research showed many users wanted something light and fun to fill idle moments like waiting in line or for the bus without the weight of productivity apps. In these contexts, people look for instant gratification: quick to start, easy to stop, and leaving a small sense of satisfaction. The Apple Watch, with its small screen, simple gestures, and haptic feedback, is ideal for delivering these ‘micro-fun’ experiences. This inspired us to build a game that transforms short, otherwise boring waits into playful moments.",
       task: [
         "Design a mini puzzle game optimized for micro sessions on Apple Watch",
         "Leverage the Digital Crown as a core interaction mechanic with precise control",

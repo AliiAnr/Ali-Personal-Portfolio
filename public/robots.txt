@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ali-an-nuur.vercel.app/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Block specific paths if any (currently none)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow specific important files
+Allow: /assets/
+Allow: /favicon.ico
+Allow: /manifest.json

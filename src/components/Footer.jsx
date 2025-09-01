@@ -1,6 +1,7 @@
 import React from 'react';
 import { user } from '../data/user';
 import { socials } from '../data/socials';
+import { useLocation } from 'react-router-dom';
 import { GitHubIcon, LinkedInIcon, TwitterIcon, ArrowUpIcon, LinktreeIcon } from './Icons';
 
 const SocialIcons = {
@@ -11,8 +12,15 @@ const SocialIcons = {
 };
 
 const Footer = () => {
+  const location = useLocation();
+  const isProjectDetailPage = location.pathname.startsWith('/project/');
+  
   return (
-    <footer className="bg-primary/5 py-12 pt-60">
+    <footer className={`py-12 pt-60 ${
+      isProjectDetailPage 
+        ? 'bg-bg' 
+        : 'bg-primary/5' 
+    }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">

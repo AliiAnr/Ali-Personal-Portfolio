@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "../data/projects";
 import ScrollReveal from "./ScrollReveal";
-import { ArrowUpIcon, GitHubIcon } from "./Icons";
+import { ArrowUpIcon, GitHubIcon, LockIcon } from "./Icons";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -83,6 +83,7 @@ const ProjectDetail = () => {
       setIsTransitioning(false);
     }, 500);
   };
+  
   return (
     <div className="min-h-screen bg-bg pt-20">
       {/* Back Button */}
@@ -172,34 +173,63 @@ const ProjectDetail = () => {
             </ScrollReveal>
 
             <ScrollReveal direction="up" delay={300}>
-              <div
-                className={`flex flex-col sm:flex-row gap-4 ${
-                  !hasMockups ? "justify-center" : ""
-                }`}
-              >
-                {isValidUrl(project.url) && (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary/90 hover:scale-105 transition-all duration-300 focus-ring"
-                  >
-                    See the project here
-                  </a>
-                )}
-                {isValidUrl(project.githubUrl) && (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-primary/20 text-primary font-medium rounded-xl hover:bg-primary/5 hover:scale-105 transition-all duration-300 focus-ring"
-                  >
-                    <GitHubIcon className="w-5 h-5" />
-                    View Code
-                  </a>
-                )}
-              </div>
-            </ScrollReveal>
+  <div
+    className={`flex flex-col sm:flex-row gap-4 ${
+      !hasMockups ? "justify-center" : ""
+    }`}
+  >
+    {/* Live Demo Button - Always show */}
+    <div className="relative group">
+      <a
+        href={isValidUrl(project.url) ? project.url : "#"}
+        target={isValidUrl(project.url) ? "_blank" : "_self"}
+        rel={isValidUrl(project.url) ? "noopener noreferrer" : ""}
+        className={`relative inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-medium rounded-xl transition-all duration-300 focus-ring overflow-hidden ${
+          isValidUrl(project.url)
+            ? 'hover:bg-primary/90 hover:scale-105 cursor-pointer'
+            : 'hover:scale-105 cursor-pointer'
+        }`}
+        onClick={!isValidUrl(project.url) ? (e) => e.preventDefault() : undefined}
+      >
+        <span className="relative z-10">See the project here</span>
+        
+        {/* Locked Overlay */}
+        {!isValidUrl(project.url) && (
+          <div className="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <LockIcon className="w-6 h-6 text-white" />
+          </div>
+        )}
+      </a>
+    </div>
+
+    {/* GitHub Button - Always show */}
+    <div className="relative group">
+      <a
+        href={isValidUrl(project.githubUrl) ? project.githubUrl : "#"}
+        target={isValidUrl(project.githubUrl) ? "_blank" : "_self"}
+        rel={isValidUrl(project.githubUrl) ? "noopener noreferrer" : ""}
+        className={`relative inline-flex items-center justify-center gap-2 px-6 py-3 border border-primary/20 text-primary font-medium rounded-xl transition-all duration-300 focus-ring overflow-hidden ${
+          isValidUrl(project.githubUrl)
+            ? 'hover:bg-primary/5 hover:scale-105 cursor-pointer'
+            : 'hover:scale-105 cursor-pointer'
+        }`}
+        onClick={!isValidUrl(project.githubUrl) ? (e) => e.preventDefault() : undefined}
+      >
+        <span className="relative z-10 flex items-center gap-2">
+          <GitHubIcon className="w-5 h-5" />
+          View Code
+        </span>
+        
+        {/* Locked Overlay */}
+        {!isValidUrl(project.githubUrl) && (
+          <div className="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <LockIcon className="w-6 h-6 text-white" />
+          </div>
+        )}
+      </a>
+    </div>
+  </div>
+</ScrollReveal>
           </div>
 
           {/* Right Column - Mockups Carousel (Only show if mockups exist) */}
