@@ -28,7 +28,7 @@
       "type": "image/png"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/favicon.com",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -36,14 +36,14 @@
   ],
   "screenshots": [
     {
-      "src": "/assets/screenshot-desktop.png",
+      "src": "/screenshot-desktop.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Ali An Nuur Portfolio - Desktop View"
     },
     {
-      "src": "/assets/screenshot-mobile.png",
+      "src": "/screenshot-mobile.png",
       "sizes": "390x844",
       "type": "image/png",
       "form_factor": "narrow",
