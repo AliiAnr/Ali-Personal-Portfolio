@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import { useAppleMode } from '../contexts/AppleModeContext';
 
 const TechMarquee = () => {
   const technologies = [
@@ -18,10 +19,12 @@ const TechMarquee = () => {
 
   const duplicatedTechnologies = [...technologies, ...technologies];
 
+  const { isAppleMode } = useAppleMode();
+
   return (
-    <div className="w-full overflow-hidden bg-bg dark:bg-bg-dark">
+    <div className={`w-full overflow-hidden ${isAppleMode ? '' : 'bg-bg dark:bg-bg-dark'}`}>
       <Marquee
-        gradient={true}
+        gradient={isAppleMode ? false : true}
         gradientColor="var(--c-bg)"
         speed={40}
         pauseOnHover={true}
@@ -37,7 +40,7 @@ const TechMarquee = () => {
               <img
                 src={tech.src}
                 alt={tech.alt}
-                className="w-12 h-12 md:w-16 md:h-16 object-contain filter hover:scale-110 transition-transform duration-300 grayscale hover:grayscale-0"
+                className="w-12 h-12 md:w-16 md:h-16 object-contain filter hover:scale-110 transition-transform duration-300 grayscale hover:grayscale-0 cursor-pointer"
                 onError={(e) => {
                   e.target.src = "/tech/placeholder.png";
                 }}

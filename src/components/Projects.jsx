@@ -8,15 +8,8 @@ const filters = [
   "All",
   "iOS",
   "Android",
-  "Web",
-  "Dashboard",
-  "Branding",
-  "UI/UX",
-  "Landing Page",
-  "E-commerce",
-  "Education",
-  "Healthcare",
-  "Directory",
+  "Website",
+  "Game",
 ];
 
 const Projects = () => {

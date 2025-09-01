@@ -1,10 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import './index.css'
+import './ShinnyText.css'
+import './GlassSurface.css'
+import './GradientBlinds.css'
+import App from './App.jsx'
+import { AppleModeProvider } from './contexts/AppleModeContext'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <AppleModeProvider>
+      <App />
+    </AppleModeProvider>
+  </StrictMode>,
 )

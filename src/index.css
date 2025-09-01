@@ -18,9 +18,53 @@
   --c-thumb-2: #F9FAFB;
 }
 
-html {
-  background-color: var(--c-bg);
+/* Apple mode specific styles - SIMPLIFIED */
+.apple-mode-enabled {
+  pointer-events: none;
 }
+
+/* Hanya aktifkan pointer events untuk elemen yang benar-benar perlu interaksi */
+.apple-mode-enabled a,
+.apple-mode-enabled button,
+.apple-mode-enabled input,
+.apple-mode-enabled textarea,
+.apple-mode-enabled select,
+.apple-mode-enabled .project-card,
+.apple-mode-enabled .hero-avatar,
+.apple-mode-enabled [data-clickable="true"],
+.apple-mode-enabled .text-block, /* Tambahkan ini untuk ScrambledText */
+.apple-mode-enabled .rfm-marquee,
+.apple-mode-enabled .rfm-marquee-container,
+.apple-mode-enabled .rfm-child,
+.apple-mode-enabled img,
+.apple-mode-enabled [class*="hover:"],
+.apple-mode-enabled [class*="group"],
+.apple-mode-enabled .group {
+  pointer-events: auto !important;
+}
+
+/* Pastikan children dari elemen interaktif juga bisa diklik */
+.apple-mode-enabled a *,
+.apple-mode-enabled button *,
+.apple-mode-enabled .project-card *,
+.apple-mode-enabled .hero-avatar *,
+.apple-mode-enabled [data-clickable="true"] *,
+.apple-mode-enabled .text-block *, /* Tambahkan ini untuk children ScrambledText */
+.apple-mode-enabled .rfm-marquee *,
+.apple-mode-enabled .rfm-marquee-container *,
+.apple-mode-enabled .rfm-child *,
+.apple-mode-enabled img,
+.apple-mode-enabled [class*="hover:"] *,
+.apple-mode-enabled [class*="group"] *,
+.apple-mode-enabled .group * {
+  pointer-events: auto !important;
+}
+
+
+
+/* html {
+  background-color: var(--c-bg);
+} */
 
 body {
   transition: background-color 0.3s ease-out, color 0.3s ease-out;
@@ -85,7 +129,7 @@ html {
 }
 
 /* Apple-style glass morphism */
-.glass {
+/* .glass {
   background-color: rgba(250, 250, 250, 0.7);
   backdrop-filter: saturate(180%) blur(16px);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -94,7 +138,7 @@ html {
 .dark .glass {
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06);
-}
+} */
 
 /* Enhanced scroll reveal animations */
 @keyframes fadeInUp {

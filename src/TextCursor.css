@@ -1,0 +1,35 @@
+.text-cursor-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-cursor-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.text-cursor-item {
+  position: absolute;
+  user-select: none;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+  /* Default size jika tidak ada className */
+  font-size: 1.5rem;
+}
+
+/* Override jika ada class Tailwind */
+.text-cursor-item.text-xs { font-size: 0.75rem !important; }
+.text-cursor-item.text-sm { font-size: 0.875rem !important; }
+.text-cursor-item.text-base { font-size: 1rem !important; }
+.text-cursor-item.text-lg { font-size: 1.125rem !important; }
+.text-cursor-item.text-xl { font-size: 1.25rem !important; }
+.text-cursor-item.text-2xl { font-size: 1.5rem !important; }
+.text-cursor-item.text-3xl { font-size: 1.875rem !important; }
+.text-cursor-item.text-4xl { font-size: 2.25rem !important; }
+.text-cursor-item.text-5xl { font-size: 3rem !important; }

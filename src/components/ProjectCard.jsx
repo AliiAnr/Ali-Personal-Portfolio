@@ -10,7 +10,9 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div 
-      className="group block rounded-3xl overflow-hidden bg-gray-50 dark:bg-white/5 shadow-lg hover:shadow-2xl transition-all duration-500 will-change-transform border border-gray-200 dark:border-white/10 h-full"
+      className="project-card group block rounded-3xl overflow-hidden bg-gray-50 dark:bg-white/5 shadow-lg hover:shadow-2xl transition-all duration-500 will-change-transform border border-gray-200 dark:border-white/10 h-full cursor-pointer clickable"
+      onClick={handleClick}
+      data-clickable="true"
     >
       {/* Image Container with Overlay */}
       <div className="relative overflow-hidden">
@@ -26,8 +28,9 @@ const ProjectCard = ({ project }) => {
         
         {/* Hover Action Button */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-          <div className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 focus-ring cursor-pointer"
-          onClick={handleClick}
+          <div 
+            className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 focus-ring cursor-pointer clickable"
+            data-clickable="true"
           >
             View Details
           </div>
