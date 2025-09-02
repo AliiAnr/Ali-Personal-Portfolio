@@ -1,12 +1,10 @@
 .shiny-text {
-  /* Base color menggunakan CSS variable */
   color: var(--c-muted);
   display: inline-block;
   position: relative;
   animation: shine 5s linear infinite;
 }
 
-/* Pseudo element untuk efek shine */
 .shiny-text::before {
   content: attr(data-text);
   position: absolute;
@@ -29,7 +27,6 @@
   animation: shine 5s linear infinite;
 }
 
-/* Dark mode - shine dengan warna yang lebih terang */
 .dark .shiny-text::before {
   background: linear-gradient(
     120deg,
@@ -43,7 +40,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Light mode - shine dengan warna yang lebih gelap */
 .light .shiny-text::before {
   background: linear-gradient(
     120deg,
@@ -74,7 +70,6 @@
   display: none;
 }
 
-/* Fallback untuk browser yang tidak support background-clip: text */
 @supports not (-webkit-background-clip: text) {
   .shiny-text::before {
     display: none;

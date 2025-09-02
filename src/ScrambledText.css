@@ -1,5 +1,4 @@
 .text-block {
-  /* Remove all hardcoded styles and let Tailwind take over */
   color: inherit;
   font-family: inherit;
   font-size: inherit;

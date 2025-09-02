@@ -18,12 +18,10 @@
   --c-thumb-2: #F9FAFB;
 }
 
-/* Apple mode specific styles - SIMPLIFIED */
 .apple-mode-enabled {
   pointer-events: none;
 }
 
-/* Hanya aktifkan pointer events untuk elemen yang benar-benar perlu interaksi */
 .apple-mode-enabled a,
 .apple-mode-enabled button,
 .apple-mode-enabled input,
@@ -32,7 +30,7 @@
 .apple-mode-enabled .project-card,
 .apple-mode-enabled .hero-avatar,
 .apple-mode-enabled [data-clickable="true"],
-.apple-mode-enabled .text-block, /* Tambahkan ini untuk ScrambledText */
+.apple-mode-enabled .text-block,
 .apple-mode-enabled .rfm-marquee,
 .apple-mode-enabled .rfm-marquee-container,
 .apple-mode-enabled .rfm-child,
@@ -43,13 +41,12 @@
   pointer-events: auto !important;
 }
 
-/* Pastikan children dari elemen interaktif juga bisa diklik */
 .apple-mode-enabled a *,
 .apple-mode-enabled button *,
 .apple-mode-enabled .project-card *,
 .apple-mode-enabled .hero-avatar *,
 .apple-mode-enabled [data-clickable="true"] *,
-.apple-mode-enabled .text-block *, /* Tambahkan ini untuk children ScrambledText */
+.apple-mode-enabled .text-block *,
 .apple-mode-enabled .rfm-marquee *,
 .apple-mode-enabled .rfm-marquee-container *,
 .apple-mode-enabled .rfm-child *,
@@ -59,8 +56,6 @@
 .apple-mode-enabled .group * {
   pointer-events: auto !important;
 }
-
-
 
 /* html {
   background-color: var(--c-bg);
@@ -74,7 +69,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Apple-style typography */
 .text-display {
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 600;
@@ -95,18 +89,15 @@ body {
   letter-spacing: -0.005em;
 }
 
-/* For smooth scrolling */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
 
-/* Custom focus ring */
 .focus-ring {
   @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary focus-visible:ring-offset-bg;
 }
 
-/* Line clamp utilities */
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -128,19 +119,6 @@ html {
   overflow: hidden;
 }
 
-/* Apple-style glass morphism */
-/* .glass {
-  background-color: rgba(250, 250, 250, 0.7);
-  backdrop-filter: saturate(180%) blur(16px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.dark .glass {
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06);
-} */
-
-/* Enhanced scroll reveal animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -207,7 +185,6 @@ html {
   }
 }
 
-/* Utility classes for scroll reveal */
 .reveal-up {
   animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
@@ -232,7 +209,6 @@ html {
   animation: slideInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-/* Custom scrollbar - Apple style */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -255,7 +231,6 @@ html {
   background-color: var(--c-primary);
 }
 
-/* Enhanced animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -288,13 +263,11 @@ html {
   opacity: 0;
 }
 
-/* Apple-style section spacing */
 .section-padding {
   padding-top: clamp(4rem, 10vw, 8rem);
   padding-bottom: clamp(4rem, 10vw, 8rem);
 }
 
-/* Subtle shadows */
 .shadow-subtle {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
@@ -308,7 +281,6 @@ html {
   padding-bottom: 5rem;
 }
 
-/* Shadow glow effect untuk avatar hover */
 .shadow-glow {
   box-shadow: 
     0 0 0 1px rgba(124, 58, 237, 0.1),
@@ -332,7 +304,6 @@ html {
   }
 }
 
-/* Reduce motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

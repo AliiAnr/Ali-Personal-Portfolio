@@ -9,7 +9,6 @@ export const useScrollReveal = (options = {}) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Once revealed, stop observing (one-time animation)
           observer.unobserve(entry.target);
         }
       },
@@ -34,7 +33,6 @@ export const useScrollReveal = (options = {}) => {
   return [ref, isVisible];
 };
 
-// Hook untuk multiple elements dengan staggered animation
 export const useStaggeredScrollReveal = (itemCount, delay = 100) => {
   const [visibleItems, setVisibleItems] = useState(new Set());
   const containerRef = useRef(null);
@@ -46,7 +44,6 @@ export const useStaggeredScrollReveal = (itemCount, delay = 100) => {
           if (entry.isIntersecting) {
             const index = parseInt(entry.target.dataset.index);
             
-            // Stagger the animation
             setTimeout(() => {
               setVisibleItems(prev => new Set([...prev, index]));
             }, index * delay);

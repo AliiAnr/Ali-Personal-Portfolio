@@ -19,11 +19,9 @@
   white-space: nowrap;
   pointer-events: none;
   z-index: 10;
-  /* Default size jika tidak ada className */
   font-size: 1.5rem;
 }
 
-/* Override jika ada class Tailwind */
 .text-cursor-item.text-xs { font-size: 0.75rem !important; }
 .text-cursor-item.text-sm { font-size: 0.875rem !important; }
 .text-cursor-item.text-base { font-size: 1rem !important; }

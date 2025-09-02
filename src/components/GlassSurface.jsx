@@ -1,7 +1,3 @@
-/*
-	Installed from https://reactbits.dev/default/
-*/
-
 import { useEffect, useRef, useId } from "react";
 import "../GlassSurface.css";
 

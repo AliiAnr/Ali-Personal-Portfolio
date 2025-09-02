@@ -1,4 +1,3 @@
-// Data for the user
 export const user = {
     name: 'Ali An Nuur',
     initials: 'ANR',
