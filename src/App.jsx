@@ -13,7 +13,6 @@ import GradientBlinds from './components/GradientBlinds';
 import { useAppleMode } from './contexts/AppleModeContext';
 import TargetCursor from './components/TargetCursor';
 
-// Home Page Component
 const HomePage = () => (
   <>
     <Header />
@@ -27,7 +26,6 @@ const HomePage = () => (
   </>
 );
 
-// Project Detail Page Component  
 const ProjectPage = () => (
   <>
     <Header />
@@ -41,10 +39,8 @@ const ProjectPage = () => (
 function App() {
   const { isAppleMode } = useAppleMode();
 
-  // Helper function untuk random number
   const randomBetween = (min, max) => Math.random() * (max - min) + min;
 
-  // Function untuk generate random gradient config
   const generateRandomGradient = () => {
     const colors = [
       ['#FF9FFC', '#5227FF'],
@@ -75,10 +71,8 @@ function App() {
     };
   };
 
-  // State untuk gradient config
   const [gradientConfig, setGradientConfig] = useState(null);
 
-  // Generate config saat Apple mode aktif
   useEffect(() => {
     if (isAppleMode) {
       setGradientConfig(generateRandomGradient());
@@ -87,17 +81,15 @@ function App() {
     }
   }, [isAppleMode]);
 
-  // Timer untuk auto-randomize setiap 20 detik
   useEffect(() => {
     let interval;
     
     // if (isAppleMode && gradientConfig) {
     //   interval = setInterval(() => {
     //     setGradientConfig(generateRandomGradient());
-    //   }, 5000); // 20 detik = 20000ms
+    //   }, 5000); // 20 sec = 20000ms
     // }
 
-    // Cleanup interval saat component unmount atau Apple mode off
     return () => {
       if (interval) {
         clearInterval(interval);

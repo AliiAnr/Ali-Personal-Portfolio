@@ -9,19 +9,16 @@ const ThemeToggle = () => {
   });
 
   useEffect(() => {
-    // Jika Apple mode aktif, paksa dark mode
     if (isAppleMode) {
       const root = document.documentElement;
       root.classList.remove('light');
       root.classList.add('dark');
       root.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
-      // Update state theme agar icon sesuai
       setTheme('dark');
       return;
     }
 
-    // Normal theme logic
     const applyTheme = (newTheme) => {
       const root = document.documentElement;
       root.classList.remove('light', 'dark');
@@ -33,21 +30,18 @@ const ThemeToggle = () => {
     applyTheme(theme);
   }, [theme, isAppleMode]);
 
-  // Tambahkan effect untuk sinkronisasi ketika keluar dari Apple mode
   useEffect(() => {
     if (!isAppleMode) {
-      // Ambil theme dari localStorage dan pastikan state sinkron
       const savedTheme = localStorage.getItem('theme') || 'dark';
       setTheme(savedTheme);
     }
   }, [isAppleMode]);
 
   const toggleTheme = () => {
-    if (isAppleMode) return; // Prevent theme toggle in Apple mode
+    if (isAppleMode) return; 
     setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
   };
 
-  // Jangan render theme toggle saat Apple mode
   if (isAppleMode) {
     return null;
   }

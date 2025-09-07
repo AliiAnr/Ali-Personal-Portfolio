@@ -11,7 +11,7 @@ const TextCursor = ({
   exitDuration = 0.5,
   removalInterval = 30,
   maxPoints = 5,
-  className = '', // Tambahkan className prop
+  className = '', 
   children
 }) => {
   const [trail, setTrail] = useState([]);

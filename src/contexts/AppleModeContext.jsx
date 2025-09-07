@@ -12,13 +12,13 @@ export const useAppleMode = () => {
 
 export const AppleModeProvider = ({ children }) => {
   const [isAppleMode, setIsAppleMode] = useState(() => {
-    return localStorage.getItem('appleMode') === 'true';
+    const savedMode = localStorage.getItem('appleMode');
+    return savedMode !== null ? savedMode === 'true' : true;
   });
 
   useEffect(() => {
     localStorage.setItem('appleMode', isAppleMode.toString());
-    
-    // Ketika Apple mode aktif atau tidak aktif, paksa dark mode
+
     const root = document.documentElement;
     root.classList.remove('light');
     root.classList.add('dark');
