@@ -471,7 +471,7 @@ export const projects = [
       "Swift Charts",
     ],
     tools: ["Xcode", "Sketch", "Confluence", "Github"],
-    url: "",
+    url: "https://testflight.apple.com/join/H1yqZyfZ",
     githubUrl: "",
 
     star: {
