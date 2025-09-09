@@ -62,7 +62,7 @@ export const projects = [
     ],
     tools: ["Android Studio", "Figma", "Miro", "Postman", "Github", "Railway"],
     url: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/AliiAnr/Fleupart-Android",
 
     star: {
       situation:
@@ -282,7 +282,7 @@ export const projects = [
     ],
     tools: ["Android Studio", "Figma", "Miro", "Postman", "Github", "Railway"],
     url: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/AliiAnr/Fleura-Android",
 
     star: {
       situation:
