@@ -44,15 +44,15 @@ function App() {
   const generateRandomGradient = () => {
     const colors = [
       ['#FF9FFC', '#5227FF'],
-      ['#FFB347', '#FF6B35'],
-      ['#4FACFE', '#00F2FE'],
-      ['#43E97B', '#38F9D7'],
-      ['#FA709A', '#FEE140'],
-      ['#A8E6CF', '#FFD3A5'],
-      ['#FD746C', '#FF9068'],
-      ['#667eea', '#764ba2'],
-      ['#f093fb', '#f5576c'],
-      ['#4facfe', '#00f2fe'],
+      // ['#FFB347', '#FF6B35'],
+      // ['#4FACFE', '#00F2FE'],
+      // ['#43E97B', '#38F9D7'],
+      // ['#FA709A', '#FEE140'],
+      // ['#A8E6CF', '#FFD3A5'],
+      // ['#FD746C', '#FF9068'],
+      // ['#667eea', '#764ba2'],
+      // ['#f093fb', '#f5576c'],
+      // ['#4facfe', '#00f2fe'],
     ];
 
     const randomColors = colors[Math.floor(Math.random() * colors.length)];
@@ -60,7 +60,7 @@ function App() {
     return {
       gradientColors: randomColors,
       angle: Math.floor(randomBetween(0, 360)),
-      noise: Number(randomBetween(0, 1).toFixed(2)),
+      noise: Number(randomBetween(0, 0.3).toFixed(2)),
       blindCount: Math.floor(randomBetween(10, 16)),
       blindMinWidth: Math.floor(randomBetween(40, 60)),
       spotlightRadius: 0.2,

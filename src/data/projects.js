@@ -661,4 +661,58 @@ export const projects = [
       "/project-covers/pyramyst/pyramyst-3.png",
     ],
   },
+
+  {
+  id: 12,
+  title: "Groovy — Reframe & Grow",
+  slug: "groovy-impostor-support",
+  description:
+    "An iOS app that helps users process emotions, reframe negative thoughts, complete bite sized challenges, and grow a personal progress tree. Designed specifically for impostor phenomenon moments, turning doubt into guided, actionable steps.",
+  image: "/project-covers/groovy/groovy-2.png",
+  appIcon: "/project-icons/groovy-icon.png",
+  tags: ["iOS", "Mental Health", "Gamification"],
+  technologies: [
+    "Swift",
+    "SwiftUI",
+    "SpriteKit",
+    "SwiftData",
+    "Supabase",
+  ],
+  tools: ["Xcode", "Figma", "Trello", "Postman", "Github"],
+  url: "https://testflight.apple.com/join/QGXusFVq",
+  githubUrl: "",
+  star: {
+    situation:
+      "Many students and early career professionals experience the impostor phenomenon, persistent self doubt and fear of being found out. Even when they achieve success, they often attribute it to luck rather than ability, leading to cycles of overpreparing, procrastinating, or avoiding visibility. These feelings not only affect confidence but also create stress, anxiety, and reduced performance in school, work, and creative projects.\n\nMost mental health or mood tracking apps stop at recording emotions, leaving users without clear next steps. What’s missing is a gentle, structured path that helps users recognize these negative patterns, reframe them into healthier perspectives, and take small, achievable actions. By combining guided reframing, micro challenges, and a growth tracking progress, this app turns moments of self doubt into opportunities for resilience building and visible progress.",
+    task: [
+      "Design an iOS app that guides users from feeling check ins to cognitive reframing and action",
+      "Create short, context aware challenges that reduce the intensity of negative emotions",
+      "Visualize progress with a growth personal tree to sustain motivation",
+      "Enable lightweight social connection so users feel less alone such as see others trees and give likes",
+      "Keep everything fast, privacy respecting, and accessible on device"
+    ],
+    action: [
+      "Built core flows in SwiftUI with MVVM",
+      "Implemented a Reframe assistant for common thinking traps using structured prompts",
+      "Engineered the progress tree using SpriteKit for smooth, low latency animations and haptic cues on milestone growth",
+      "Used SwiftData for local state & history and integrated Supabase for optional social feed",
+      "Optimized accessibility and minimized cognitive load with clear, calm UI copy",
+      "Added celebratory micro interactions such as haptics after finishing challenges to reinforce habit loops"
+    ],
+    result: [
+      "Users report faster de-escalation of negative feelings through guided reframing and tiny wins",
+      "Completion rates improved with short, themed challenges and immediate tree growth feedback",
+      "On device storage by default, social features are opt in to preserve privacy",
+      "Smooth 60fps animations for tree growth sequences on mid range devices, cold start under ~300 ms in testing",
+      "Early testers described the tree as a living symbol of progress, helping maintain streaks and motivation"
+    ]
+  },
+  roles: ["iOS Developer", "UI/UX Designer", "Researcher"],
+  mockups: [
+    "/project-covers/groovy/groovy-2.png",
+    "/project-covers/groovy/groovy-3.png",
+    "/project-covers/groovy/groovy-4.png"
+  ]
+}
+
 ].reverse();
