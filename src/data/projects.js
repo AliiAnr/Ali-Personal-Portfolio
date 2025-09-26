@@ -664,7 +664,7 @@ export const projects = [
 
   {
   id: 12,
-  title: "Groovy — Reframe & Grow",
+  title: "Groovy - Know Your Worth",
   slug: "groovy-impostor-support",
   description:
     "An iOS app that helps users process emotions, reframe negative thoughts, complete bite sized challenges, and grow a personal progress tree. Designed specifically for impostor phenomenon moments, turning doubt into guided, actionable steps.",
