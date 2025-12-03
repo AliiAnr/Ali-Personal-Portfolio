@@ -713,6 +713,95 @@ export const projects = [
     "/project-covers/groovy/groovy-3.png",
     "/project-covers/groovy/groovy-4.png"
   ]
+},
+
+{
+  id: 13,
+  title: "Jelajah - Smart Travel Coordinator",
+  slug: "jelajah-travel-coordination",
+  description:
+    "An iOS travel app that keeps groups effortlessly coordinated with real time location sharing, shared itineraries, meeting point reminders, and CloudKit powered trip collaboration. Designed with a clean, map first interface and built to solve the chaos of traveling with friends.",
+  image: "/project-covers/jelajah/jelajah-1.png",
+  appIcon: "/project-icons/jelajah-icon.png",
+
+  tags: [
+    "iOS",
+    "Travel",
+    "MapKit",
+    "Real Time Location",
+    "CloudKit",
+    "Location Sharing",
+    "Live Activities"
+  ],
+
+  technologies: [
+    "UIKit",
+    "SwiftUI",
+    "CloudKit",
+    "SwiftData",
+    "MapKit",
+    "CoreLocation",
+    "Combine",
+    "UserNotifications",
+    "AppIntents"
+  ],
+
+  tools: [
+    "Xcode",
+    "Figma",
+    "Figjam",
+    "Trello",
+    "GitHub"
+  ],
+
+  url: "",
+  githubUrl: "",
+
+  star: {
+    situation:
+      "Group travel often breaks down not because the destination is unclear, but because people lose track of each other. In unfamiliar cities, friends constantly ask, “Where are you?”, “Where are you headed now?”, or “When are we meeting?”. Coordinating over chat becomes messy messages get buried, location updates are inconsistent, and not everyone checks their phone at the same time. Our interviews showed that groups wanted a simple, real time way to stay aligned: a live map, a shared day itinerary, and automatic meeting point tracking without constant messaging. This insight inspired us to build Jelajah a map first travel companion designed specifically for group coordination.",
+
+    task: [
+      "Design a map first iOS app for real time group location sharing",
+      "Build a shared trip system using CloudKit for seamless collaboration",
+      "Develop a day based itinerary with automatic meeting point & ETA tracking",
+      "Enable Live Activities for quick glances during navigation or lock screen use",
+      "Optimize for battery efficiency while maintaining location precision"
+    ],
+
+    action: [
+      "Designed a clean, structured interface in SwiftUI with floating map overlays and layered pill components",
+      "Implemented real time location updates using CoreLocation with smart throttling to reduce battery drain",
+      "Built CloudKit shared trip zones enabling seamless collaboration, live syncing, and join via link flow",
+      "Created a day itinerary engine grouping destinations with countdown timers and next location indicators",
+      "Developed a meeting point detector using geofencing + distance thresholds for accurate arrival signals",
+      "Added Live Activities + Dynamic Island to show group updates, next meeting time, and quick status",
+      "Engineered custom MapKit annotations, glowing polylines, and smooth camera transitions for clarity",
+      "Tested the system in real world outdoor environments to tune accuracy, latency, and location stability"
+    ],
+
+    result: [
+      "Reduced group miscoordination by centralizing all info routes, meeting points, and real time positions into one shared map",
+      "CloudKit syncing achieved reliable <1s update propagation during testing with 4–6 participants",
+      "Users reported less chat clutter, replacing repeated questions with quick map glances",
+      "Live Activities significantly improved awareness during movement, especially in crowded areas",
+      "Battery usage stayed within acceptable range thanks to adaptive location throttling strategies",
+      "The app delivered a calmer, more structured group travel experience where everyone stays aligned"
+    ]
+  },
+
+  roles: [
+    "iOS Developer",
+    "Backend Developer",
+    "Researcher"
+  ],
+
+  mockups: [
+    "/project-covers/jelajah/jelajah-1.png",
+    "/project-covers/jelajah/jelajah-2.png",
+    "/project-covers/jelajah/jelajah-3.png"
+  ]
 }
+
 
 ].reverse();
