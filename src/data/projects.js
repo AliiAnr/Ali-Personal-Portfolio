@@ -754,7 +754,7 @@ export const projects = [
     "GitHub"
   ],
 
-  url: "",
+  url: "https://apps.apple.com/us/app/jelajah/id6754815511",
   githubUrl: "",
 
   star: {
