@@ -14,6 +14,7 @@
 
     <!-- Brand-specific meta -->
     <meta name="author" content="Ali An Nuur" />
+    <meta property="og:site_name" content="Ali An Nuur" />
     <meta property="og:site_name" content="Ali An Nuur - Mobile Developer" />
 
     <!-- Updated Favicons -->
@@ -113,100 +114,74 @@
 
     <!-- Enhanced JSON-LD Schema -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ali An Nuur",
-        "url": "https://ali-an-nuur.vercel.app",
-        "image": "https://ali-an-nuur.vercel.app/avatar.webp",
-        "sameAs": [
-          "https://www.linkedin.com/in/alianr",
-          "https://github.com/AliiAnr"
-        ],
-        "jobTitle": "iOS & Android Developer",
-        "description": "Skilled mobile developer specializing in iOS and Android app development",
-        "knowsAbout": [
-          "iOS Development",
-          "Android Development",
-          "Swift",
-          "Kotlin",
-          "React Native",
-          "Flutter",
-          "Mobile UI/UX"
-        ],
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Freelance"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "ID"
-        }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://ali-an-nuur.vercel.app/#work",
-        "url": "https://ali-an-nuur.vercel.app/",
-        "name": "Ali An Nuur's Portfolio",
-        "description": "Portfolio website showcasing iOS and Android development projects",
-        "publisher": {
-          "@id": "https://ali-an-nuur.vercel.app/#about"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://ali-an-nuur.vercel.app/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://aliannuur.my.id/#person",
+  "name": "Ali An Nuur",
+  "alternateName": ["Ali Annuur", "Ali An-Nuur", "AliAnNuur"],
+  "url": "https://aliannuur.my.id/",
+  "image": "https://aliannuur.my.id/avatar.webp",
+  "jobTitle": "iOS & Android Developer",
+  "description": "Skilled mobile developer specializing in iOS and Android app development",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance Mobile Developer"
+  },
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Apple Developer Academy"
+    },
+    {
+      "@type": "Organization",
+      "name": "Bangkit Academy"
+    }
+  ],
+  "knowsAbout": [
+    "iOS Development",
+    "Android Development",
+    "Swift",
+    "Kotlin",
+    "React Native",
+    "Flutter",
+    "Mobile UI/UX"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mataram",
+    "addressCountry": "ID"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/alianr",
+    "https://github.com/AliiAnr",
+    "https://linktr.ee/AliAnNuur"
+  ]
+}
+</script>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ali An Nuur",
-        "alternateName": ["Ali Annuur", "Ali An-Nuur", "AliAnNuur"],
-        "url": "https://ali-an-nuur.vercel.app",
-        "image": "https://ali-an-nuur.vercel.app/avatar.webp",
-        "jobTitle": "Mobile Developer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Freelance Mobile Developer"
-        },
-        "alumniOf": [
-          {
-            "@type": "Organization",
-            "name": "Apple Developer Academy"
-          },
-          {
-            "@type": "Organization",
-            "name": "Bangkit Academy"
-          }
-        ],
-        "knowsAbout": [
-          "iOS Development",
-          "Android Development",
-          "Swift Programming",
-          "Kotlin Programming",
-          "React Native",
-          "Flutter Development",
-          "Mobile UI/UX Design"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Mataram",
-          "addressCountry": "Indonesia"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/alianr",
-          "https://github.com/AliiAnr",
-          "https://linktr.ee/AliAnNuur"
-        ]
-      }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://aliannuur.my.id/#website",
+  "url": "https://aliannuur.my.id/",
+  "name": "Ali An Nuur",
+  "alternateName": "Ali An Nuur - iOS & Android Developer",
+  "description": "Portfolio website showcasing iOS and Android development projects",
+  "publisher": {
+    "@id": "https://aliannuur.my.id/#person"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://aliannuur.my.id/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+
+
   </head>
   <body
     class="bg-bg text-text font-sans antialiased selection:bg-primary selection:text-white"
